@@ -1,0 +1,55 @@
+.traffic-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.5s ease;
+}
+
+.light.active {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.pedestrian-button,
+.emergency-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pedestrian-button:active,
+.emergency-button:active {
+  background-color: #1e6b47;
+}
+
+.countdown-timer {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
